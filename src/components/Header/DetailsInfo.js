@@ -1,81 +1,69 @@
 import Grid from '@mui/material/Grid';
 import styled from 'styled-components';
-const Item= styled.div`
-{  
+const Item = styled.div`{  
   
-    padding-top:20px;
+    padding-top:40px;
     height: 220px;
     font-family: 'Nunito Sans', sans-serif ;
     background:white;
+    
 }
 `
-const Textbox= styled.div`
-{  
-  
-    padding-top:70px;
+const Textbox = styled.div`{  
+  padding-top:70px;
 }
 `
-const Countriesdiv= styled.div`
-{  
-padding-top:40px;
+const Countriesdiv = styled.div`{  
+padding-top:90px;
 display:flex;
 
 }
 `
 const Titel = styled.h2`{
     font-size:22px;
-
-}`
-const Boldtext= styled.span`
-{
-  font-weight: bold;
-}  
+}
 `
-const Button = styled.button`
- {
+const Button = styled.button`{
   border:none;
   background:white;
   font-size: 15px;
   margin-left:15px;
   box-shadow: 3px 5px 5px 3px  rgba(0, 0, 0, 0.2);
-  
 }
 `
 export const DetailsInfo = ({ }) => {
     return (
         <>
-           <Grid container spacing={4}>
-                     <Grid item xs={0} md={6}>
-                <Item>
-                <Titel> United States of America</Titel>
-          <div>
-             <p>< Boldtext>Native Name: </ Boldtext>Belgie </p>
-                <p>< Boldtext> Population: </ Boldtext>323,947,000 </p>
-               <p> < Boldtext >Region: </ Boldtext>Americas </p>
-               <p>< Boldtext> Sub Region: </ Boldtext>Westem Europe </p>
-               <p>< Boldtext> Capital: </ Boldtext> Washington.D.C.</p>
-                    </div>
-                </Item>
-        </Grid>
-                    
-        <Grid item xs={12} md={6}>
+            <Grid container spacing={4}>
+                <Grid item xs={0} md={6}>
                     <Item>
-                        <Textbox> 
-                              <p><Boldtext>Top Level Domain: </ Boldtext>.be</p>
-           <p>< Boldtext>Currencies: </ Boldtext> Euro</p> 
-                            <p> <Boldtext> Languages: </ Boldtext> Dutch,French,German</p>   
-                            </Textbox>             
-                </Item>
-              
-             
-        </Grid>
-    </Grid>
+                        <Titel>United States of America</Titel>
+                        <div>
+                            <p><b>Native Name: </b>Belgie </p>
+                            <p><b> Population: </b>323,947,000 </p>
+                            <p> <b>Region: </b>Americas </p>
+                            <p><b> Sub Region: </b>Westem Europe </p>
+                            <p><b> Capital: </b> Washington.D.C.</p>
+                        </div>
+                    </Item>
+                </Grid>
+
+                <Grid item xs={12} md={6}>
+                    <Item>
+                        <Textbox>
+                            <p><b>Top Level Domain: </b>.be</p>
+                            <p><b>Currencies: </b> Euro</p>
+                            <p><b> Languages: </b> Dutch,French,German</p>
+                        </Textbox>
+                    </Item>
+                </Grid>
+            </Grid>
             <Countriesdiv>
-        <Boldtext>Border Countries:</Boldtext>
-        <div>
-            <Button>France</Button>
-            <Button>Germany</Button>
-            <Button>Netherlands</Button>
+                <b>Border Countries:</b>
+                <div>
+                    <Button>France</Button>
+                    <Button>Germany</Button>
+                    <Button>Netherlands</Button>
                 </div>
             </Countriesdiv>
         </>

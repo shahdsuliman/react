@@ -1,20 +1,14 @@
 import ReactDOM from "react-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Details from "./pages/Details";
+import './index.css';
+import App from "./App";
 
 
-export default function Appp() {
+
+export default function Index() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />}/>
-          
-          <Route path="Details" element={<Details />}/>
-        
-      </Routes>
-    </BrowserRouter>
+
+    <App />
   );
 }
 
-ReactDOM.render(<Appp />, document.getElementById("root"));
+ReactDOM.render(<Index />, document.getElementById("root"));
