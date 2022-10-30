@@ -7,7 +7,7 @@ import Details from "./pages/Details";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/react">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Details" element={<Details />} />

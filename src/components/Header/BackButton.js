@@ -11,8 +11,7 @@ const Bdiv = styled.div`
     
 }
 `
-
-const MyButton = styled(Button)`
+const MButton = styled(Button)`
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     color: black !important;
 `;
@@ -21,14 +20,14 @@ export const BackButton = ({ }) => {
     return (
         <Bdiv>
 
-            <MyButton
+            <MButton
                 component={Link}
                 to="/"
                 variant="default"
                 color="inherit"
                 startIcon={<ArrowBackIcon />}>
                 Back
-            </MyButton>
+            </MButton>
 
         </Bdiv>
     );
