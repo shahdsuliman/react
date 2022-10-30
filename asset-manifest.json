@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.80e12148.css",
+    "main.js": "/react-gh-pages/static/js/main.42ac33dc.js",
+    "static/media/albania.svg": "/react-gh-pages/static/media/albania.dd17f9b0b19aa16e7afe8e156454f33d.svg",
+    "static/media/Brazil.svg": "/react-gh-pages/static/media/Brazil.0195f1434b135a18881f1fd31a962073.svg",
+    "static/media/usa.svg": "/react-gh-pages/static/media/usa.14abad61351d512234363fd6c0af113a.svg",
+    "index.html": "/react-gh-pages/index.html",
+    "static/media/islands.svg": "/react-gh-pages/static/media/islands.dae59e50e62504789ce58388d65e1b30.svg",
+    "static/media/algeria.svg": "/react-gh-pages/static/media/algeria.8fee433ae9c49de475a8c04a17ca0579.svg",
+    "static/media/iceland.svg": "/react-gh-pages/static/media/iceland.bb94eebadbe98e459758ddcf03f1dfb9.svg",
+    "main.80e12148.css.map": "/react-gh-pages/static/css/main.80e12148.css.map",
+    "main.42ac33dc.js.map": "/react-gh-pages/static/js/main.42ac33dc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.80e12148.css",
+    "static/js/main.42ac33dc.js"
+  ]
+}
