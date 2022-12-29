@@ -2,8 +2,9 @@ import styled from 'styled-components';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import Button from '@mui/material/Button';
+import React from 'react';
 
-const Bdiv = styled.div`
+const Bdi = styled.div`
 {  
     width:100%;
      height: 80px;
@@ -18,7 +19,7 @@ const MButton = styled(Button)`
 
 export const BackButton = ({ }) => {
     return (
-        <Bdiv>
+        <Bdi>
 
             <MButton
                 component={Link}
@@ -29,6 +30,6 @@ export const BackButton = ({ }) => {
                 Back
             </MButton>
 
-        </Bdiv>
+        </Bdi>
     );
 }

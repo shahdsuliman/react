@@ -3,9 +3,14 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
+import React from 'react';
 const Text = styled.h1`
 {
     font-size: 23px;
+    @media (max-width: 376px) {
+        font-size: 16px;
+      
+      }
 }
 `
 const Headeritem = styled.div`
@@ -21,7 +26,7 @@ const Item = styled.div`
     height: 50px;
 }
 `
-export const Header = ({ }) => {
+export const Header = ({toggleTheme}) => {
     return (
         <Headeritem >
             <Container>
@@ -29,15 +34,16 @@ export const Header = ({ }) => {
                     direction="row"
                     justifyContent="space-between"
                     alignItems="center">
-                    <Grid item xs={3} md={9}>
+                    <Grid item xs={8} md={9}>
                         <Item>
                             <Text >Where in the world?</Text>
                         </Item>
                     </Grid>
-                    <Grid item xs={1} md={2}>
-                        <Item sx={{ ml: 7 }}>
+                    <Grid item xs={3} md={2}>
+                        <Item sx={{ml: 4}}xs={6}>
                             <Button variant="default"
-                                startIcon={<DarkModeIcon />}>
+                                startIcon={<DarkModeIcon />}
+                                onClick={toggleTheme}>
                                 Dark Mode
                             </Button>
                         </Item>

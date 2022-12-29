@@ -1,24 +1,8 @@
-
-
-
-
-.drop{
-    position: absolute;
-    border-radius: 5px;
-    z-index: 1;
-    background-color: white;
-    width: 50%;
-    margin-bottom: 20px;
-}
-.dropdown{
-    cursor: pointer;
-    border-radius: 5px;
-   
-   }
-   .inputbox{
-   
-     height: 40px;
-    padding-left:60px ;
-    border: none;
-    box-shadow: 0 5px 5px  rgba(0, 0, 0, 0.2);
-   }
+.dark {
+    background-color: #333;
+    color: #fff;
+    }
+    .light {
+    background-color: #fff;
+    color: #333;
+    }

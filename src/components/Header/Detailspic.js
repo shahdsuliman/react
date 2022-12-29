@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Usaimg from '../Images/usa.svg';
+import React from 'react';
 
 const CountryPic = styled.img`{   
     width:100%;
@@ -11,10 +11,10 @@ const CountryPic = styled.img`{
 const CountryPicDiv = styled.div`{
     object-fit: cover;
 }`
-export const Detailspic = ({ }) => {
+export const Detailspic = ({ image }) => {
     return (
         <CountryPicDiv>
-            <CountryPic src={Usaimg} alt="" />
+            <CountryPic src={image} alt="" />
         </CountryPicDiv>
     );
 }
